@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" 
+    href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" 
+    integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" 
+    crossorigin="anonymous">
+    <link rel="stylesheet"
+    href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+    integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
+    crossorigin="anonymous">
+    <!--<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0/css/bootstrap.min.css" /> -->
+    <link rel="stylesheet" href="style.css">
+    <title>Weather Dashboard</title>
+</head>
+<body>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+    <header class="text-center text-light pb-3"><h1>Weather Dashboard</h1></header>
+    <div class = "container-fluid m-0">
+    
+
+    <div class="row content">
+        <!--Search Sidebar-->
+        <div class= "col-md-3 sidenav history">
+            <div class="form-group">
+                <label for="searchBox"><h3>Search for a City</h3></label>
+                <input type="search" class="form-control col-md-10" id=searchBox>
+                <div class="input-group-append"><button class="btn btn-primary col-md-1"><i class="fas fa-search"></i></button></div>
+                
+            </div>
+        </div>
+        <!--Search Results-->
+        <div class= "col-md-9">
+            <div class="row content">
+                <div class="card pt-3 pl-3 pb-3">
+                    <div class="card-body">
+                        <h1 class="city">Not Found</h1><span id="icon"><img id="wicon" src="" alt="Weather icon"></span>
+                        <div class=tempF></div>
+                        <div class=humidity></div>
+                        <div class=wind></div>
+                    </div>
+                </div>
+            </div>
+            <div class="row content">
+                <div class="card" style="width: 18rem;">
+                    <div class="card-body">
+                      <h5 class="card-title">Tomorrow</h5>
+                      <div class="tempF0"></div>
+                      <div class="humidity0"></div>
+                    </div>
+                  </div>
+                  <div class="card" style="width: 18rem;">
+                    <div class="card-body">
+                      <h5 class="card-title">Next day</h5>
+                      <div class="tempF1"></div>
+                      <div class="humidity1"></div>
+                    </div>
+                  </div>
+                  <div class="card" style="width: 18rem;">
+                    <div class="card-body">
+                      <h5 class="card-title">Next day</h5>
+                      <div class="tempF2"></div>
+                      <div class="humidity2"></div>
+                    </div>
+                  </div>
+                  <div class="card" style="width: 18rem;">
+                    <div class="card-body">
+                      <h5 class="card-title">Next day</h5>
+                      <div class="tempF3"></div>
+                      <div class="humidity3"></div>
+                    </div>
+                  </div>
+                  <div class="card" style="width: 18rem;">
+                    <div class="card-body">
+                      <h5 class="card-title">Next day</h5>
+                      <div class="tempF4"></div>
+                      <div class="humidity4"></div>
+                    </div>
+                  </div>
+
+            </div>
+        </div>
+    </div>
+    </div>
+    
+
+    <script src="script.js"></script>
+</body>
+</html>
